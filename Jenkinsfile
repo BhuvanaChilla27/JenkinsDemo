@@ -29,6 +29,7 @@ pipeline {
                       echo "index.html does not exist in the build directory."
                       exit 1  # Exit with non-zero status to indicate failure
                    fi
+                   npm test
                 '''
             }
         }
